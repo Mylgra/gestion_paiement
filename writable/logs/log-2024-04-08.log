@@ -1,0 +1,236 @@
+INFO - 2024-04-08 00:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:24:09 --> CSRF token verified.
+INFO - 2024-04-08 00:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:25:23 --> CSRF token verified.
+ERROR - 2024-04-08 00:25:23 --> mysqli_sql_exception: Duplicata du champ '0' pour la clef 'etudiant.PRIMARY' in C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Et...', 0)
+#1 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Et...')
+#2 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Et...')
+#3 C:\wamp64\www\Exemple1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Et...', Array, false)
+#4 C:\wamp64\www\Exemple1\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\Exemple1\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\Exemple1\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\Exemple1\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\Exemple1\app\Controllers\EtudiantController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\Exemple1\system\CodeIgniter.php(943): App\Controllers\EtudiantController->enregistrer()
+#10 C:\wamp64\www\Exemple1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+#11 C:\wamp64\www\Exemple1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\Exemple1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\Exemple1\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\E...')
+#14 {main}
+CRITICAL - 2024-04-08 00:25:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ '0' pour la clef 'etudiant.PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (:NomEtudiant:, :Promotion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\EtudiantController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->enregistrer()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-08 00:25:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicata du champ '0' pour la clef 'etudiant.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (\'Kasenda tresor\', \'G1 Informatique\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (\'Kasenda tresor\', \'G1 Informatique\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (:NomEtudiant:, :Promotion:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\EtudiantController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->enregistrer()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-08 00:25:23 --> [Caused by] mysqli_sql_exception: Duplicata du champ '0' pour la clef 'etudiant.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (\'Kasenda tresor\', \'G1 Informatique\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (\'Kasenda tresor\', \'G1 Informatique\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (\'Kasenda tresor\', \'G1 Informatique\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Etudiant` (`NomEtudiant`, `Promotion`) VALUES (:NomEtudiant:, :Promotion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\EtudiantController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->enregistrer()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-08 00:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:28:10 --> CSRF token verified.
+INFO - 2024-04-08 00:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:30:48 --> CSRF token verified.
+INFO - 2024-04-08 00:30:49 --> CSRF token verified.
+INFO - 2024-04-08 00:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:33:05 --> CSRF token verified.
+INFO - 2024-04-08 00:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-08 00:43:20 --> ErrorException: Undefined array key "NumMant"
+in APPPATH\Views\etudiant\etudiant.php on line 73.
+ 1 APPPATH\Views\etudiant\etudiant.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NumMant"', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\etudiant\\etudiant.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\etudiant\\etudiant.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('etudiant/etudiant', [], true)
+ 5 APPPATH\Controllers\EtudiantController.php(17): view('etudiant/etudiant', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-08 00:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-08 00:47:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+in SYSTEMPATH\Router\Router.php on line 704.
+ 1 SYSTEMPATH\Router\Router.php(195): CodeIgniter\Router\Router->checkDisallowedChars('<')
+ 2 SYSTEMPATH\CodeIgniter.php(825): CodeIgniter\Router\Router->handle('<')
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-08 00:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:48:34 --> CSRF token verified.
+INFO - 2024-04-08 00:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:48:42 --> CSRF token verified.
+INFO - 2024-04-08 00:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:48:45 --> CSRF token verified.
+INFO - 2024-04-08 00:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:52:19 --> CSRF token verified.
+INFO - 2024-04-08 00:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:55:02 --> CSRF token verified.
+CRITICAL - 2024-04-08 00:55:02 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\EtudiantController.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->supprimer([...])
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-08 00:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:56:58 --> CSRF token verified.
+INFO - 2024-04-08 00:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:57:02 --> CSRF token verified.
+INFO - 2024-04-08 00:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 00:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-08 01:15:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "etudaint/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('etudaint/edit.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('etudaint/edit', [], true)
+ 3 APPPATH\Controllers\EtudiantController.php(51): view('etudaint/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->editer(Object(App\Models\EtudiantModel))
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-08 01:15:40 --> Error: Cannot use object of type App\Models\EtudiantModel as array
+in APPPATH\Views\etudiant\edit.php on line 7.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('etudiant/edit', [], true)
+ 4 APPPATH\Controllers\EtudiantController.php(51): view('etudiant/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->editer(Object(App\Models\EtudiantModel))
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-08 01:16:41 --> ErrorException: Undefined array key "NumMat"
+in APPPATH\Views\etudiant\edit.php on line 7.
+ 1 APPPATH\Views\etudiant\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NumMat"', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\etudiant\\edit.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\etudiant\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('etudiant/edit', [], true)
+ 5 APPPATH\Controllers\EtudiantController.php(51): view('etudiant/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->editer([...])
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-08 01:17:49 --> Error: Call to undefined function set_value()
+in APPPATH\Views\etudiant\edit.php on line 22.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('etudiant/edit', [], true)
+ 4 APPPATH\Controllers\EtudiantController.php(51): view('etudiant/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->editer([...])
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-08 01:19:39 --> CSRF token verified.
+CRITICAL - 2024-04-08 01:19:39 --> Error: Call to a member function update() on array
+in APPPATH\Controllers\EtudiantController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\EtudiantController->update([...])
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EtudiantController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-08 01:20:13 --> CSRF token verified.
+CRITICAL - 2024-04-08 01:22:16 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('etudiant/update/4', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-08 01:23:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('etudiant/update/4', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-08 01:23:09 --> CSRF token verified.
+INFO - 2024-04-08 01:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-08 01:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-08 02:03:14 --> ErrorException: compact(): Undefined variable $date
+in APPPATH\Controllers\Home.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $date', 'C:\\wamp64\\www\\Exemple1\\app\\Controllers\\Home.php', 14)
+ 2 APPPATH\Controllers\Home.php(14): compact('date')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
