@@ -1,0 +1,901 @@
+INFO - 2024-04-09 02:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:26:24 --> CSRF token verified.
+INFO - 2024-04-09 02:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:42:29 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\PaiementController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 02:44:44 --> ErrorException: compact(): Undefined variable $paiements
+in APPPATH\Controllers\PaiementController.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $paiements', 'C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php', 25)
+ 2 APPPATH\Controllers\PaiementController.php(25): compact('paiements', 'etudiants')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:44:59 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\paiement\paiement.php on line 22.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 4 APPPATH\Controllers\PaiementController.php(25): view('paiement/paiement', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:46:30 --> ErrorException: Undefined variable $paiements
+in APPPATH\Views\paiement\paiement.php on line 65.
+ 1 APPPATH\Views\paiement\paiement.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paiements', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(26): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:46:49 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\paiement\paiement.php on line 69.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 4 APPPATH\Controllers\PaiementController.php(26): view('paiement/paiement', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:47:43 --> ErrorException: Attempt to read property "NomEtudiant" on array
+in APPPATH\Views\paiement\paiement.php on line 68.
+ 1 APPPATH\Views\paiement\paiement.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "NomEtudiant" on array', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 68)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(26): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:48:21 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\paiement\paiement.php on line 69.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 4 APPPATH\Controllers\PaiementController.php(26): view('paiement/paiement', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:49:18 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Views\paiement\paiement.php on line 65.
+ 1 APPPATH\Views\paiement\paiement.php(65): json_decode([...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(26): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:52:58 --> ErrorException: Attempt to read property "NomEtudiant" on array
+in APPPATH\Views\paiement\paiement.php on line 68.
+ 1 APPPATH\Views\paiement\paiement.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "NomEtudiant" on array', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 68)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(28): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:54:50 --> Error: Object of class stdClass could not be converted to string
+in APPPATH\Views\paiement\paiement.php on line 66.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 4 APPPATH\Controllers\PaiementController.php(28): view('paiement/paiement', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:55:49 --> ErrorException: Attempt to read property "NomEtudiant" on array
+in APPPATH\Views\paiement\paiement.php on line 71.
+ 1 APPPATH\Views\paiement\paiement.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "NomEtudiant" on array', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 71)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(28): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 02:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:56:54 --> ErrorException: Attempt to read property "NomEtudiant" on array
+in APPPATH\Views\paiement\paiement.php on line 68.
+ 1 APPPATH\Views\paiement\paiement.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "NomEtudiant" on array', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 68)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(28): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 02:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 02:57:27 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Views\paiement\paiement.php on line 69.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 4 APPPATH\Controllers\PaiementController.php(28): view('paiement/paiement', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:05:10 --> ErrorException: Undefined variable $paiement
+in APPPATH\Views\paiement\paiement.php on line 68.
+ 1 APPPATH\Views\paiement\paiement.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paiement', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 68)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(28): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:24:36 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\PaiementController.php on line 71.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PaiementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PaiementController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\PaiementController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 03:24:38 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\PaiementController.php on line 71.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PaiementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PaiementController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\PaiementController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:25:06 --> ErrorException: Undefined array key "NumEt"
+in APPPATH\Views\paiement\paiement.php on line 74.
+ 1 APPPATH\Views\paiement\paiement.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NumEt"', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 74)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(29): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:28:02 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\PaiementController.php on line 71.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PaiementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PaiementController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\PaiementController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:29:15 --> Error: Call to undefined function validation_list_errors()
+in APPPATH\Views\paiement\edit.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 4 APPPATH\Controllers\PaiementController.php(69): view('paiement/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer([...])
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:32:35 --> ErrorException: Undefined array key "Paiment"
+in APPPATH\Views\paiement\edit.php on line 32.
+ 1 APPPATH\Views\paiement\edit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Paiment"', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(72): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer([...])
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:40:38 --> CSRF token verified.
+INFO - 2024-04-09 03:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:41:05 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(72): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(null)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:41:14 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(72): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(null)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:45:22 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(72): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(null)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:46:50 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(72): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(12)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:50:55 --> Error: Class "App\Controllers\Database" not found
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 03:51:10 --> ErrorException: Undefined variable $etudiants
+in APPPATH\Views\home.php on line 21.
+ 1 APPPATH\Views\home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $etudiants', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\home.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 03:52:08 --> ErrorException: Undefined variable $students
+in APPPATH\Views\home.php on line 23.
+ 1 APPPATH\Views\home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\home.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 03:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 03:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 03:52:41 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(72): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(20)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:01:44 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::search(), 0 passed in C:\wamp64\www\Exemple1\system\CodeIgniter.php on line 943 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:09:21 --> CSRF token verified.
+INFO - 2024-04-09 04:15:23 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:15:23 --> Error: Call to a member function like() on array
+in APPPATH\Controllers\Home.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:19:16 --> CSRF token verified.
+ERROR - 2024-04-09 04:19:16 --> mysqli_sql_exception: Champ: 'NumMat' dans where clause est ambigu in C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\Exemple1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Exemple1\app\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Exemple1\system\CodeIgniter.php(943): App\Controllers\Home->search()
+#6 C:\wamp64\www\Exemple1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Exemple1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Exemple1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Exemple1\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\E...')
+#10 {main}
+CRITICAL - 2024-04-09 04:19:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ: 'NumMat' dans where clause est ambigu
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE :NumMat: ESCAPE \'!\'
+AND  `DateP` LIKE :DateP: ESCAPE \'!\'
+AND  `NomEtudiant` LIKE :NomEtudiant: ESCAPE \'!\'
+AND  `Montant` LIKE :Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 2 APPPATH\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:19:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ: 'NumMat' dans where clause est ambigu
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE :NumMat: ESCAPE \'!\'
+AND  `DateP` LIKE :DateP: ESCAPE \'!\'
+AND  `NomEtudiant` LIKE :NomEtudiant: ESCAPE \'!\'
+AND  `Montant` LIKE :Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 4 APPPATH\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:19:16 --> [Caused by] mysqli_sql_exception: Champ: 'NumMat' dans where clause est ambigu
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `NumMat` LIKE :NumMat: ESCAPE \'!\'
+AND  `DateP` LIKE :DateP: ESCAPE \'!\'
+AND  `NomEtudiant` LIKE :NomEtudiant: ESCAPE \'!\'
+AND  `Montant` LIKE :Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 5 APPPATH\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:23:23 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('rechercher', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:23:31 --> CSRF token verified.
+ERROR - 2024-04-09 04:23:31 --> mysqli_sql_exception: Champ 'paiement.NomEtudiant' inconnu dans where clause in C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\Exemple1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Exemple1\app\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Exemple1\system\CodeIgniter.php(943): App\Controllers\Home->search()
+#6 C:\wamp64\www\Exemple1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Exemple1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Exemple1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Exemple1\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\E...')
+#10 {main}
+CRITICAL - 2024-04-09 04:23:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'paiement.NomEtudiant' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE :paiement.NomEtudiant: ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 2 APPPATH\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:23:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'paiement.NomEtudiant' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE :paiement.NomEtudiant: ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 4 APPPATH\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:23:31 --> [Caused by] mysqli_sql_exception: Champ 'paiement.NomEtudiant' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE \'%KALALA%\' ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+AND  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+AND  `paiement`.`NomEtudiant` LIKE :paiement.NomEtudiant: ESCAPE \'!\'
+AND  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 5 APPPATH\Controllers\Home.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:23:58 --> CSRF token verified.
+INFO - 2024-04-09 04:24:09 --> CSRF token verified.
+INFO - 2024-04-09 04:24:24 --> CSRF token verified.
+INFO - 2024-04-09 04:26:12 --> CSRF token verified.
+ERROR - 2024-04-09 04:26:12 --> mysqli_sql_exception: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'
+ORDER BY `DateP` DESC' à la ligne 7 in C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\Exemple1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Exemple1\app\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Exemple1\system\CodeIgniter.php(943): App\Controllers\Home->search()
+#6 C:\wamp64\www\Exemple1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Exemple1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Exemple1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Exemple1\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\E...')
+#10 {main}
+CRITICAL - 2024-04-09 04:26:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'
+ORDER BY `DateP` DESC' à la ligne 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE :etudiant.NomEtudiant: ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 2 APPPATH\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:26:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'
+ORDER BY `DateP` DESC' à la ligne 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE :etudiant.NomEtudiant: ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 4 APPPATH\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:26:12 --> [Caused by] mysqli_sql_exception: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'
+ORDER BY `DateP` DESC' à la ligne 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+ORDER BY `DateP` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE :etudiant.NomEtudiant: ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'
+ORDER BY `DateP` DESC', [...], false)
+ 5 APPPATH\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:26:42 --> CSRF token verified.
+ERROR - 2024-04-09 04:26:42 --> mysqli_sql_exception: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'' à la ligne 7 in C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Exemple1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\Exemple1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\Exemple1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Exemple1\app\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Exemple1\system\CodeIgniter.php(943): App\Controllers\Home->search()
+#6 C:\wamp64\www\Exemple1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Exemple1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Exemple1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Exemple1\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\E...')
+#10 {main}
+CRITICAL - 2024-04-09 04:26:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'' à la ligne 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE :etudiant.NomEtudiant: ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:26:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'' à la ligne 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE :etudiant.NomEtudiant: ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+CRITICAL - 2024-04-09 04:26:42 --> [Caused by] mysqli_sql_exception: Erreur de syntaxe près de ')
+OR  `paiement`.`Montant` LIKE '%2024-04-05%' ESCAPE '!'' à la ligne 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE \'%2024-04-05%\' ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE \'%2024-04-05%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paiement`
+RIGHT JOIN `etudiant` ON `etudiant`.`NumMat` = `paiement`.`NumMat`
+WHERE `paiement`.`NumMat` LIKE :paiement.NumMat: ESCAPE \'!\'
+OR  `paiement`.`DateP` LIKE :paiement.DateP: ESCAPE \'!\'
+OR  `etudiant`.`NomEtudiant` LIKE :etudiant.NomEtudiant: ESCAPE \'!\'
+)
+OR  `paiement`.`Montant` LIKE :paiement.Montant: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Home.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:27:29 --> CSRF token verified.
+INFO - 2024-04-09 04:29:45 --> CSRF token verified.
+INFO - 2024-04-09 04:30:27 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:30:27 --> ErrorException: Undefined variable $paiements
+in APPPATH\Views\recherche.php on line 35.
+ 1 APPPATH\Views\recherche.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paiements', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\recherche.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\recherche.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('recherche', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('recherche', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:30:48 --> CSRF token verified.
+INFO - 2024-04-09 04:30:56 --> CSRF token verified.
+INFO - 2024-04-09 04:31:11 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:31:34 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('rechercher', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:32:11 --> CSRF token verified.
+INFO - 2024-04-09 04:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:32:51 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:32:51 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(10)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:35:00 --> CSRF token verified.
+INFO - 2024-04-09 04:35:05 --> CSRF token verified.
+INFO - 2024-04-09 04:35:23 --> CSRF token verified.
+INFO - 2024-04-09 04:35:40 --> CSRF token verified.
+INFO - 2024-04-09 04:35:47 --> CSRF token verified.
+INFO - 2024-04-09 04:36:12 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:36:12 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(11)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:39:38 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:39:38 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(11)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:39:50 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:39:50 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(19)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')

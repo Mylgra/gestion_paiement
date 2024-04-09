@@ -45,7 +45,7 @@
 
         </div>
         
-        <button type="submit" class="btn btn-primary">Enregistrer Etudiant</button>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
     </form>
 
 
@@ -57,7 +57,7 @@
                     <th scope="col">Matricule</th>
                     <th scope="col">Nom etudiant</th>
                     <th scope="col">Promotion</th>
-                    <th scope="col">OPTION</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>

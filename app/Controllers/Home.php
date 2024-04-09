@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use Config\Database;
 use App\Models\EtudiantModel;
 use App\Models\PaiementModel;
 
@@ -9,40 +10,37 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        $etudiants = (new EtudiantModel())->findAll();
+        $query  = Database::connect();
+        $paiements = $query->table('paiement')
+                        ->select('*')
+                        ->join('etudiant', 'etudiant.NumMat = paiement.NumMat', 'right')
+                        ->orderBy('DateP', 'DESC')
+                        ->get()
+                        ->getResultArray();
 
-        return view('home', compact('etudiants'));
+
+        return view('home', compact('paiements'));
     }
 
 
-    public function parDate()
+    public function search()
     {
-        $query = $this->request->getGet('query');
+        $q = $this->request->getPost('query');
+        $query  = Database::connect();
 
-    dd($query);
+        $paiements = $query->table('paiement')
+                        ->select('*')
+                        ->join('etudiant', 'etudiant.NumMat = paiement.NumMat', 'right');
 
-        $paiements = (new PaiementModel)->where('DateP', $query)->findAll();
-    }
+        if(isset($q)) {
+            $result = $paiements->like('paiement.NumMat', $q)
+                ->orLike('paiement.DateP', $q)
+                ->orLike('etudiant.NomEtudiant', $q)
+                ->orLike('paiement.Motif', $q);
+            $resultats = $result->get()->getResultArray();
 
-    public function parEtudiant()
-    {
-        $query = $this->request->getGet('NomEtudiant');
-
-        dd($query);
-
-        $paiements = (new EtudiantModel)->where('NomEtudiant', $query)->findAll();
-
-        dd($paiements);
-    }
-
-    public function parPromotion()
-    {
-        $query = $this->request->getGet('Promotion');
-
-        dd($query);
-
-        $paiements = (new EtudiantModel)->where('Promotion', $query)->findAll();
-
-        dd($paiements);
+            return view('recherche', compact('resultats'));
+        }
+        
     }
 }

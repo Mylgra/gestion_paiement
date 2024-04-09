@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
     <div class="mt-5">
         <div class="d-flex align-items-center">
-            <h1 class="mt-5 mb-5 text-primary">Liste de paiements</h1>
+            <h1 class="mt-5 mb-5 text-primary">Liste recherher</h1>
         </div>
         <div class="container mb-4 mt-4">
                 <form action="<?= site_url('/rechercher') ?>" method="post" class="d-flex">
@@ -32,7 +32,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($paiements as $key => $paiement): ?>
+                <?php foreach ($resultats as $key => $paiement): ?>
                     <tr>
                         <td><?= $key + 1 ?></td>
                         <td><?= $paiement['NomEtudiant'] ?></td>

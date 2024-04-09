@@ -28,6 +28,10 @@ $routes->delete('/etudiant/delete/(:num)', [EtudiantController::class, 'supprime
 
 
 // systeme de filtrage 
-$routes->get('/filtrage/date', [Home::class, 'parDate'], ['as' => 'pardate']); 
-$routes->get('/filtrage/etudiant', [Home::class, 'parEtudiant'], ['as' => 'paretudiant']); 
-$routes->get('/filtrage/promotion', [Home::class, 'parPromotion'], ['as' => 'parpromotion']); 
+$routes->post('/rechercher/', [Home::class, 'search'], ['as' => 'search']);
+
+$routes->get('/paiement/edition/(:num)', [PaiementController::class, 'editer'], ['as' => 'edition_paiement']);
+$routes->put('/paiement/update/(:num)', [PaiementController::class, 'update'], ['as'=> 'update_paiement']);
+
+
+$routes->delete('/paiement/delete/(:num)', [PaiementController::class, 'supprimer'] ,['as'=> 'supprimer_paiement']);

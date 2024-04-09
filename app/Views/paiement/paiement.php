@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 
-    <h1 class="text-primary mt-3 pb-5">Enregistrer un Paiement</h1>
+    <h1 class="text-primary mt-3 pb-5">Nouveau Paiement</h1>
 
     <?php if(session()->getFlashdata('error')): ?>
         <span class="alert alert-danger" role="alert">
@@ -15,9 +15,9 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="NumMat" class="form-label">Numéro Matricule:</label>
+                    <label for="NumMat" class="form-label">Etudiant:</label>
                     <select class="form-select" name="NumMat" id="NumMat">
-                        <option selected>Liste des etudiants</option>
+                        <option selected>Choisir un étudiant </option>
                         <?php foreach($etudiants as $etudiant): ?>
                             <option value="<?php $etudiant['NumMat'] ?>">
                                 <?php $etudiant['NomEtudiant'] . ' ' . $etudiant['Promotion'] ?>
@@ -54,19 +54,30 @@
         <table class="table">
             <thead class="table-dark">
                 <tr>
-                    <th scope="col">Matricule</th>
+                    <th scope="col">Numero</th>
+                    <th scope="col">Etudiant</th>
                     <th scope="col">Montant</th>
                     <th scope="col">DatePaiement</th>
                     <th scope="col">Motif</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($paiements as $paiement): ?>
+                <?php foreach ($students as $key => $paiement): ?>
                     <tr>
-                        <td><?= $paiement['NumP'] ?></td>
-                        <td><?= $paiement['Montant'] ?></td>
-                        <td><?= $paiement['Motif'] ?></td>
+                        <td><?= $key + 1 ?></td>
+                        <td><?= $paiement['NomEtudiant'] ?></td>
+                        <td><?= $paiement['Montant'] ?> CDF</td>
                         <td><?= $paiement['DateP'] ?></td>
+                        <td><?= $paiement['Motif'] ?></td>
+                        <td class="d-flex gap-3">
+                            <a href="<?= site_url('/paiement/edition/'. $paiement['NumP'] ) ?>" class="btn btn-primary ml-2 mr-2">Editer</a>
+                            <form action="<?= base_url('/paiement/delete/'.$paiement['NumP'] ) ?>" method="post" confirm="Voulez vous supprimer cette etudiant">
+                            <?= csrf_field() ?>
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger ml-2">Supprimer</button>
+                            </form>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
