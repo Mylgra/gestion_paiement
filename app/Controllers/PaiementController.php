@@ -24,8 +24,6 @@ class PaiementController extends Controller
 
         $etudiants = (new EtudiantModel())->findAll();
 
-        $students;
-
         return view('paiement/paiement', compact('students', 'etudiants'));
     }
 
@@ -41,10 +39,16 @@ class PaiementController extends Controller
             'Motif'  => 'required',
             'DateP'  => 'required',
         ])) {
-            $paiements = (new PaiementModel())->findAll();
+            $query  = Database::connect();
+            $students = $query->table('paiement')
+                        ->select('*')
+                        ->join('etudiant', 'etudiant.NumMat = paiement.NumMat', 'right')
+                        ->orderBy('DateP', 'DESC')
+                        ->get()
+                        ->getResultArray();
             $etudiants = (new EtudiantModel())->findAll();
 
-        return view('paiement/paiement', compact('paiements', 'etudiants'));
+        return view('paiement/paiement', compact('students', 'etudiants'));
         }
 
         $post = $this->validator->getValidated();
@@ -52,10 +56,10 @@ class PaiementController extends Controller
         $model = model(PaiementModel::class);
 
         $model->save([
-            'NumMat' => trim($post['NumMat']),
-            'Montant'  => trim($post['Montant']),
-            'Motif'  => trim($post['Motif']),
-            'DateP'  => trim($post['DateP']),
+            'NumMat' => $post['NumMat'],
+            'Montant'  => $post['Montant'],
+            'Motif'  => $post['Motif'],
+            'DateP'  => $post['DateP'],
         ]);
 
         return redirect()->route('paiement');
@@ -106,13 +110,28 @@ class PaiementController extends Controller
     }
 
 
-    public function supprimer(int $paiement)
+    public function supprimer(int $query)
     {
         
-        $query = (new PaiementModel)->where('NumP', $paiement)->first();
+        $result = new PaiementModel();
+
+        $etudiant = new EtudiantModel();
 
     
-        $query->delete($paiement);
+        $paiement = $result->find($query);
+
+        $resultat = $etudiant->where('NumMat', $paiement['NumMat'])->delete();
+
+        if ($paiement) {
+
+            $result->delete($query);
+
+            // Redirect to a success page or display a success message
+            return redirect()->to(site_url('paiement'))->with('success', 'Paiement deleted successfully.');
+        } else {
+            // Redirect to an error page or display an error message
+            return redirect()->to(site_url('paiement'))->with('error', 'Paiement not found.');
+        }
 
         return redirect()->back();
     }

@@ -42,7 +42,7 @@
                         <td class="d-flex gap-3">
                             <a href="<?= site_url('/paiement/edition/'. $paiement['NumP'] ) ?>" class="btn btn-primary ml-2 mr-2">Editer</a>
                             <form action="<?= base_url('/paiement/delete/'.$paiement['NumP'] ) ?>" method="post" confirm="Voulez vous supprimer cette etudiant">
-                            <?= csrf_field() ?>
+                                <?= csrf_field() ?>
                                 <input type="hidden" name="_method" value="DELETE">
                                 <button type="submit" class="btn btn-danger ml-2">Supprimer</button>
                             </form>

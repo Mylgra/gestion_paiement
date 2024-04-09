@@ -17,10 +17,9 @@
                 <div class="mb-3">
                     <label for="NumMat" class="form-label">Etudiant:</label>
                     <select class="form-select" name="NumMat" id="NumMat">
-                        <option selected>Choisir un étudiant </option>
                         <?php foreach($etudiants as $etudiant): ?>
-                            <option value="<?php $etudiant['NumMat'] ?>">
-                                <?php $etudiant['NomEtudiant'] . ' ' . $etudiant['Promotion'] ?>
+                            <option value="<?= $etudiant['NumMat'] ?>">
+                                <?= $etudiant['NomEtudiant'] ?>
                             </option>
                         <?php endforeach; ?>
                     </select>
@@ -40,8 +39,8 @@
             </div>
             <div class="col-md-12">
                 <div class="mb-3">
-                    <label for="DateP" class="form-label">Motif:</label>
-                    <textarea class="form-control" name="DateP" id="DateP" required ><?= set_value('DateP') ?></textarea>
+                    <label for="Motif" class="form-label">Motif:</label>
+                    <textarea class="form-control" name="Motif" id="Motif" required ><?= set_value('Motif') ?></textarea>
                 </div>
             </div>
         </div>

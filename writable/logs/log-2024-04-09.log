@@ -899,3 +899,199 @@ in APPPATH\Controllers\PaiementController.php on line 115.
  3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:41:43 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:41:43 --> ErrorException: Undefined variable $id
+in APPPATH\Controllers\PaiementController.php on line 115.
+ 1 APPPATH\Controllers\PaiementController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(19)
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:42:21 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:42:21 --> ErrorException: Undefined variable $id
+in APPPATH\Controllers\PaiementController.php on line 115.
+ 1 APPPATH\Controllers\PaiementController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(19)
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:43:11 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:43:11 --> ErrorException: Undefined variable $id
+in APPPATH\Controllers\PaiementController.php on line 115.
+ 1 APPPATH\Controllers\PaiementController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(19)
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:43:31 --> CSRF token verified.
+INFO - 2024-04-09 04:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:47:09 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:47:09 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(8)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:47:09 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:47:10 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(8)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:47:50 --> CSRF token verified.
+INFO - 2024-04-09 04:49:36 --> CSRF token verified.
+INFO - 2024-04-09 04:50:05 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:50:05 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(8)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:50:20 --> CSRF token verified.
+INFO - 2024-04-09 04:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:50:30 --> CSRF token verified.
+INFO - 2024-04-09 04:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:51:17 --> CSRF token verified.
+CRITICAL - 2024-04-09 04:51:17 --> Error: Call to a member function delete() on array
+in APPPATH\Controllers\PaiementController.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->supprimer(7)
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:23 --> CSRF token verified.
+INFO - 2024-04-09 04:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:30 --> CSRF token verified.
+INFO - 2024-04-09 04:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:35 --> CSRF token verified.
+INFO - 2024-04-09 04:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:40 --> CSRF token verified.
+INFO - 2024-04-09 04:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:55:25 --> CSRF token verified.
+INFO - 2024-04-09 04:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:55:59 --> CSRF token verified.
+INFO - 2024-04-09 04:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:57:18 --> CSRF token verified.
+INFO - 2024-04-09 04:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 04:57:18 --> ErrorException: Undefined variable $students
+in APPPATH\Views\paiement\paiement.php on line 66.
+ 1 APPPATH\Views\paiement\paiement.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(47): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->enregistrer()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 04:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 04:58:38 --> CSRF token verified.
+INFO - 2024-04-09 04:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 04:58:38 --> ErrorException: Undefined variable $students
+in APPPATH\Views\paiement\paiement.php on line 66.
+ 1 APPPATH\Views\paiement\paiement.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(45): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->enregistrer()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:00:17 --> CSRF token verified.
+INFO - 2024-04-09 05:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:00:17 --> ErrorException: Undefined variable $students
+in APPPATH\Views\paiement\paiement.php on line 66.
+ 1 APPPATH\Views\paiement\paiement.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(45): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->enregistrer()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:00:48 --> CSRF token verified.
+INFO - 2024-04-09 05:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:00:48 --> ErrorException: Undefined variable $students
+in APPPATH\Views\paiement\paiement.php on line 66.
+ 1 APPPATH\Views\paiement\paiement.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(45): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->enregistrer()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:01:13 --> CSRF token verified.
+INFO - 2024-04-09 05:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:01:13 --> ErrorException: Undefined variable $students
+in APPPATH\Views\paiement\paiement.php on line 66.
+ 1 APPPATH\Views\paiement\paiement.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\paiement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/paiement', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(45): view('paiement/paiement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->enregistrer()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:01:53 --> CSRF token verified.
+INFO - 2024-04-09 05:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:02:18 --> CSRF token verified.
+INFO - 2024-04-09 05:02:58 --> CSRF token verified.
+INFO - 2024-04-09 05:03:08 --> CSRF token verified.
+CRITICAL - 2024-04-09 05:03:09 --> ErrorException: Undefined variable $post
+in APPPATH\Controllers\PaiementController.php on line 39.
+ 1 APPPATH\Controllers\PaiementController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $post', 'C:\\wamp64\\www\\Exemple1\\app\\Controllers\\PaiementController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->enregistrer()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:03:55 --> CSRF token verified.
+INFO - 2024-04-09 05:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:04:53 --> CSRF token verified.
+INFO - 2024-04-09 05:05:49 --> CSRF token verified.
+INFO - 2024-04-09 05:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:06:20 --> CSRF token verified.
+INFO - 2024-04-09 05:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:08:21 --> CSRF token verified.
+INFO - 2024-04-09 05:09:05 --> CSRF token verified.
+INFO - 2024-04-09 05:09:19 --> CSRF token verified.
+INFO - 2024-04-09 05:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:09:54 --> CSRF token verified.
+INFO - 2024-04-09 05:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:10:08 --> CSRF token verified.
