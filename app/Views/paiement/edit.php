@@ -20,7 +20,7 @@
                     <select class="form-select" name="NumMat" id="NumMat">
                         <option selected>Choisir un étudiant </option>
                         <?php foreach($etudiants as $etudiant): ?>
-                            <option value="<?php echo $etudiant['NumMat']; ?>"
+                            <option value="<?= $etudiant['NumMat']; ?>"
                                 <?php if ($paiement['NumMat'] == $etudiant['NumMat']) echo 'selected'; ?>>
                                 <?php echo $etudiant['NomEtudiant'] . ' ' . $etudiant['Promotion']; ?>
                             </option>

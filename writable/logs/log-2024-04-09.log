@@ -1095,3 +1095,58 @@ INFO - 2024-04-09 05:09:20 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-04-09 05:09:54 --> CSRF token verified.
 INFO - 2024-04-09 05:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-04-09 05:10:08 --> CSRF token verified.
+INFO - 2024-04-09 05:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:11:42 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(76): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(24)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:13:01 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(76): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(24)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:13:45 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(76): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(24)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-09 05:13:51 --> ErrorException: Trying to access array offset on null
+in APPPATH\Views\paiement\edit.php on line 13.
+ 1 APPPATH\Views\paiement\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\Exemple1\\app\\Views\\paiement\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('paiement/edit', [], true)
+ 5 APPPATH\Controllers\PaiementController.php(76): view('paiement/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\PaiementController->editer(23)
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaiementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\Exemple1\\public\\index.php')
+INFO - 2024-04-09 05:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-09 05:16:01 --> CSRF token verified.
+INFO - 2024-04-09 05:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

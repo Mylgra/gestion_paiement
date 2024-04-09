@@ -69,9 +69,8 @@ class PaiementController extends Controller
     public function editer(int $payer)
     {
         helper('form');
-        $paiement = (new PaiementModel)->where('NumMat', $payer)->first();
+        $paiement = (new PaiementModel)->where('NumP', $payer)->first();
         $etudiants = (new EtudiantModel())->findAll();
-
 
         return view('paiement/edit', compact('paiement', 'etudiants'));
     }
